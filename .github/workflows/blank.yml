@@ -22,6 +22,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: FIRST
+        uses: actions/github-script@v4
+        with:
+          script: |
+            console.log("FIRST")
     
       - name: Show contents
         uses: actions/github-script@v4
